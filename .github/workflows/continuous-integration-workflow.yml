@@ -32,3 +32,12 @@ jobs:
     needs: build
     steps: 
     - uses: actions/checkout@v2 
+
+    - name: Docker build
+      run: docker build minnp1805/exercise9-1306 --tag  .
+ 
+    - name: login
+      run: docker login
+ 
+    - name: docker push
+      run: docker push  minnp011805/exercise9-1306 -9
