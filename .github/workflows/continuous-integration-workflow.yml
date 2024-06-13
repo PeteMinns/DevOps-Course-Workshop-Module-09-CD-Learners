@@ -40,4 +40,4 @@ jobs:
       run: docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_PASSWORD }}
  
     - name: docker push
-      run: docker push  minnp011805/exercise9-1306 -9
+      run: docker push  minnp011805/exercise9-1306
